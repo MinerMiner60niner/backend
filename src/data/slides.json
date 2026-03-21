@@ -3,119 +3,170 @@
     "id": 1,
     "imageFile": "AiAiA.png",
     "title": "AiAiA",
-    "lines": [],
+    "lines": [
+      { "jp": "あいあいあ", "romaji": "ai ai a", "lv": "pirmais pants", "en": "first verse" },
+      { "jp": "つぎのぱんと", "romaji": "tsugi no panto", "lv": "otrais pants", "en": "second verse" }
+    ],
     "comments": []
   },
   {
     "id": 2,
     "imageFile": "Angelseek.png",
     "title": "Angelseek",
-    "lines": [],
+    "lines": [
+      { "jp": "てきすと", "romaji": "tekisuto", "lv": "pirmais pants", "en": "first verse" },
+      { "jp": "もくひょう", "romaji": "mokuhyou", "lv": "otrais pants", "en": "second verse" }
+    ],
     "comments": []
   },
   {
     "id": 3,
     "imageFile": "Atashiwamondaisaku.png",
     "title": "Atashiwamondaisaku",
-    "lines": [],
+    "lines": [
+      { "jp": "あたしは", "romaji": "atashi wa", "lv": "pirmais pants", "en": "first verse" },
+      { "jp": "もんだいさく", "romaji": "mondaisaku", "lv": "otrais pants", "en": "second verse" }
+    ],
     "comments": []
   },
   {
     "id": 4,
     "imageFile": "ChocolatCadabra.png",
     "title": "ChocolatCadabra",
-    "lines": [],
+    "lines": [
+      { "jp": "しょこら", "romaji": "shokora", "lv": "pirmais pants", "en": "first verse" },
+      { "jp": "かだぶら", "romaji": "kadabura", "lv": "otrais pants", "en": "second verse" }
+    ],
     "comments": []
   },
   {
     "id": 5,
     "imageFile": "DIGNITY.png",
     "title": "DIGNITY",
-    "lines": [],
+    "lines": [
+      { "jp": "でぃぐにてぃ", "romaji": "dignity", "lv": "pirmais pants", "en": "first verse" },
+      { "jp": "つよさ", "romaji": "tsuyosa", "lv": "otrais pants", "en": "second verse" }
+    ],
     "comments": []
   },
   {
     "id": 6,
     "imageFile": "elf.png",
     "title": "elf",
-    "lines": [],
+    "lines": [
+      { "jp": "えるふ", "romaji": "erufu", "lv": "pirmais pants", "en": "first verse" },
+      { "jp": "まほう", "romaji": "mahou", "lv": "otrais pants", "en": "second verse" }
+    ],
     "comments": []
   },
   {
     "id": 7,
     "imageFile": "Gyakkou.png",
     "title": "Gyakkou",
-    "lines": [],
+    "lines": [
+      { "jp": "ぎゃっこう", "romaji": "gyakkou", "lv": "pirmais pants", "en": "first verse" },
+      { "jp": "ひかり", "romaji": "hikari", "lv": "otrais pants", "en": "second verse" }
+    ],
     "comments": []
   },
   {
     "id": 8,
     "imageFile": "Jukkai.png",
     "title": "Jukkai",
-    "lines": [],
+    "lines": [
+      { "jp": "じゅっかい", "romaji": "jukkai", "lv": "pirmais pants", "en": "first verse" },
+      { "jp": "かいもの", "romaji": "kaimono", "lv": "otrais pants", "en": "second verse" }
+    ],
     "comments": []
   },
   {
     "id": 9,
     "imageFile": "MAGIC.png",
     "title": "MAGIC",
-    "lines": [],
+    "lines": [
+      { "jp": "まじっく", "romaji": "majikku", "lv": "pirmais pants", "en": "first verse" },
+      { "jp": "ふしぎ", "romaji": "fushigi", "lv": "otrais pants", "en": "second verse" }
+    ],
     "comments": []
   },
   {
     "id": 10,
     "imageFile": "MIRROR.png",
     "title": "MIRROR",
-    "lines": [],
+    "lines": [
+      { "jp": "みらー", "romaji": "miraa", "lv": "pirmais pants", "en": "first verse" },
+      { "jp": "かがみ", "romaji": "kagami", "lv": "otrais pants", "en": "second verse" }
+    ],
     "comments": []
   },
   {
     "id": 11,
     "imageFile": "RuLe.png",
     "title": "RuLe",
-    "lines": [],
+    "lines": [
+      { "jp": "るーる", "romaji": "ruuru", "lv": "pirmais pants", "en": "first verse" },
+      { "jp": "きまり", "romaji": "kimari", "lv": "otrais pants", "en": "second verse" }
+    ],
     "comments": []
   },
   {
     "id": 12,
     "imageFile": "Show.png",
     "title": "Show",
-    "lines": [],
+    "lines": [
+      { "jp": "しょー", "romaji": "shoo", "lv": "pirmais pants", "en": "first verse" },
+      { "jp": "みせる", "romaji": "miseru", "lv": "otrais pants", "en": "second verse" }
+    ],
     "comments": []
   },
   {
     "id": 13,
     "imageFile": "SoldierGame.png",
     "title": "SoldierGame",
-    "lines": [],
+    "lines": [
+      { "jp": "そるじゃー", "romaji": "sorujaa", "lv": "pirmais pants", "en": "first verse" },
+      { "jp": "たたかい", "romaji": "tatakai", "lv": "otrais pants", "en": "second verse" }
+    ],
     "comments": []
   },
   {
     "id": 14,
     "imageFile": "Value.png",
     "title": "Value",
-    "lines": [],
+    "lines": [
+      { "jp": "ばりゅー", "romaji": "baryuu", "lv": "pirmais pants", "en": "first verse" },
+      { "jp": "かち", "romaji": "kachi", "lv": "otrais pants", "en": "second verse" }
+    ],
     "comments": []
   },
   {
     "id": 15,
     "imageFile": "Vivarium.png",
     "title": "Vivarium",
-    "lines": [],
+    "lines": [
+      { "jp": "びばりうむ", "romaji": "bibariumu", "lv": "pirmais pants", "en": "first verse" },
+      { "jp": "せかい", "romaji": "sekai", "lv": "otrais pants", "en": "second verse" }
+    ],
     "comments": []
   },
   {
     "id": 16,
     "imageFile": "SakuraBiyori.png",
     "title": "SakuraBiyori",
-    "lines": [],
+    "lines": [
+      { "jp": "さくらびより", "romaji": "sakura biyori", "lv": "pirmais pants", "en": "first verse" },
+      { "jp": "はるかぜ", "romaji": "harukaze", "lv": "otrais pants", "en": "second verse" }
+    ],
     "comments": []
   },
   {
     "id": 17,
     "imageFile": "X.png",
     "title": "X",
-    "lines": [],
+    "lines": [
+      { "jp": "えっくす", "romaji": "ekkusu", "lv": "pirmais pants", "en": "first verse" },
+      { "jp": "なぞ", "romaji": "nazo", "lv": "otrais pants", "en": "second verse" }
+    ],
     "comments": []
   }
 ]
