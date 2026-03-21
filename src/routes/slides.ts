@@ -1,5 +1,5 @@
 import { Router } from "express";
-import slidesData from "../data/slides.json" with { type: "json" };
+import slidesData from "../data/slides.json" assert { type: "json" };
 
 type Slide = {
   id: number;
