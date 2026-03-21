@@ -14,9 +14,12 @@ type Slide = {
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Load JSON manually (Render-safe)
+// Load JSON from the *source* folder, not dist
 const slidesData: Slide[] = JSON.parse(
-  readFileSync(path.join(__dirname, "../data/slides.json"), "utf8")
+  readFileSync(
+    path.join(__dirname, "../../src/data/slides.json"),
+    "utf8"
+  )
 );
 
 const router = Router();
