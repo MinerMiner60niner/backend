@@ -14,28 +14,28 @@
     "imageFile": "Angelseek.png",
     "title": "Angelseek",
     "lines": [
-      { "jp": "てきすと", "romaji": "tekisuto", "lv": "pirmais pants", "en": "first verse" },
-      { "jp": "もくひょう", "romaji": "mokuhyou", "lv": "otrais pants", "en": "second verse" }
+      { "jp": "第一節", "romaji": "daiichi setsu", "lv": "Pirmais pants", "en": "First verse" },
+      { "jp": "第二節", "romaji": "daini setsu", "lv": "Otrais pants", "en": "Second verse" }
     ],
     "comments": []
   },
   {
     "id": 3,
     "imageFile": "Atashiwamondaisaku.png",
-    "title": "Atashiwamondaisaku",
+    "title": "I'm a Controversy",
     "lines": [
-      { "jp": "あたしは", "romaji": "atashi wa", "lv": "pirmais pants", "en": "first verse" },
-      { "jp": "もんだいさく", "romaji": "mondaisaku", "lv": "otrais pants", "en": "second verse" }
+      { "jp": "第一節", "romaji": "daiichi setsu", "lv": "Pirmais pants", "en": "First verse" },
+      { "jp": "第二節", "romaji": "daini setsu", "lv": "Otrais pants", "en": "Second verse" }
     ],
     "comments": []
   },
   {
     "id": 4,
     "imageFile": "ChocolatCadabra.png",
-    "title": "ChocolatCadabra",
+    "title": "Chocolat Cadabra",
     "lines": [
-      { "jp": "しょこら", "romaji": "shokora", "lv": "pirmais pants", "en": "first verse" },
-      { "jp": "かだぶら", "romaji": "kadabura", "lv": "otrais pants", "en": "second verse" }
+      { "jp": "第一節", "romaji": "daiichi setsu", "lv": "Pirmais pants", "en": "First verse" },
+      { "jp": "第二節", "romaji": "daini setsu", "lv": "Otrais pants", "en": "Second verse" }
     ],
     "comments": []
   },
@@ -44,28 +44,28 @@
     "imageFile": "DIGNITY.png",
     "title": "DIGNITY",
     "lines": [
-      { "jp": "でぃぐにてぃ", "romaji": "dignity", "lv": "pirmais pants", "en": "first verse" },
-      { "jp": "つよさ", "romaji": "tsuyosa", "lv": "otrais pants", "en": "second verse" }
+      { "jp": "第一節", "romaji": "daiichi setsu", "lv": "Pirmais pants", "en": "First verse" },
+      { "jp": "第二節", "romaji": "daini setsu", "lv": "Otrais pants", "en": "Second verse" }
     ],
     "comments": []
   },
   {
     "id": 6,
     "imageFile": "elf.png",
-    "title": "elf",
+    "title": "Elf",
     "lines": [
-      { "jp": "えるふ", "romaji": "erufu", "lv": "pirmais pants", "en": "first verse" },
-      { "jp": "まほう", "romaji": "mahou", "lv": "otrais pants", "en": "second verse" }
+      { "jp": "第一節", "romaji": "daiichi setsu", "lv": "Pirmais pants", "en": "First verse" },
+      { "jp": "第二節", "romaji": "daini setsu", "lv": "Otrais pants", "en": "Second verse" }
     ],
     "comments": []
   },
   {
     "id": 7,
     "imageFile": "Gyakkou.png",
-    "title": "Gyakkou",
+    "title": "Backlight",
     "lines": [
-      { "jp": "ぎゃっこう", "romaji": "gyakkou", "lv": "pirmais pants", "en": "first verse" },
-      { "jp": "ひかり", "romaji": "hikari", "lv": "otrais pants", "en": "second verse" }
+      { "jp": "第一節", "romaji": "daiichi setsu", "lv": "Pirmais pants", "en": "First verse" },
+      { "jp": "第二節", "romaji": "daini setsu", "lv": "Otrais pants", "en": "Second verse" }
     ],
     "comments": []
   },
@@ -74,8 +74,8 @@
     "imageFile": "Jukkai.png",
     "title": "Jukkai",
     "lines": [
-      { "jp": "じゅっかい", "romaji": "jukkai", "lv": "pirmais pants", "en": "first verse" },
-      { "jp": "かいもの", "romaji": "kaimono", "lv": "otrais pants", "en": "second verse" }
+      { "jp": "第一節", "romaji": "daiichi setsu", "lv": "Pirmais pants", "en": "First verse" },
+      { "jp": "第二節", "romaji": "daini setsu", "lv": "Otrais pants", "en": "Second verse" }
     ],
     "comments": []
   },
@@ -84,8 +84,8 @@
     "imageFile": "MAGIC.png",
     "title": "MAGIC",
     "lines": [
-      { "jp": "まじっく", "romaji": "majikku", "lv": "pirmais pants", "en": "first verse" },
-      { "jp": "ふしぎ", "romaji": "fushigi", "lv": "otrais pants", "en": "second verse" }
+      { "jp": "第一節", "romaji": "daiichi setsu", "lv": "Pirmais pants", "en": "First verse" },
+      { "jp": "第二節", "romaji": "daini setsu", "lv": "Otrais pants", "en": "Second verse" }
     ],
     "comments": []
   },
@@ -105,8 +105,8 @@
     "imageFile": "RuLe.png",
     "title": "RuLe",
     "lines": [
-      { "jp": "るーる", "romaji": "ruuru", "lv": "pirmais pants", "en": "first verse" },
-      { "jp": "きまり", "romaji": "kimari", "lv": "otrais pants", "en": "second verse" }
+      { "jp": "第一節", "romaji": "daiichi setsu", "lv": "Pirmais pants", "en": "First verse" },
+      { "jp": "第二節", "romaji": "daini setsu", "lv": "Otrais pants", "en": "Second verse" }
     ],
     "comments": []
   },
@@ -123,10 +123,10 @@
   {
     "id": 13,
     "imageFile": "SoldierGame.png",
-    "title": "SoldierGame",
+    "title": "soldier game",
     "lines": [
-      { "jp": "そるじゃー", "romaji": "sorujaa", "lv": "pirmais pants", "en": "first verse" },
-      { "jp": "たたかい", "romaji": "tatakai", "lv": "otrais pants", "en": "second verse" }
+      { "jp": "第一節", "romaji": "daiichi setsu", "lv": "Pirmais pants", "en": "First verse" },
+      { "jp": "第二節", "romaji": "daini setsu", "lv": "Otrais pants", "en": "Second verse" }
     ],
     "comments": []
   },
@@ -135,8 +135,8 @@
     "imageFile": "Value.png",
     "title": "Value",
     "lines": [
-      { "jp": "ばりゅー", "romaji": "baryuu", "lv": "pirmais pants", "en": "first verse" },
-      { "jp": "かち", "romaji": "kachi", "lv": "otrais pants", "en": "second verse" }
+      { "jp": "第一節", "romaji": "daiichi setsu", "lv": "Pirmais pants", "en": "First verse" },
+      { "jp": "第二節", "romaji": "daini setsu", "lv": "Otrais pants", "en": "Second verse" }
     ],
     "comments": []
   },
@@ -145,28 +145,28 @@
     "imageFile": "Vivarium.png",
     "title": "Vivarium",
     "lines": [
-      { "jp": "びばりうむ", "romaji": "bibariumu", "lv": "pirmais pants", "en": "first verse" },
-      { "jp": "せかい", "romaji": "sekai", "lv": "otrais pants", "en": "second verse" }
+      { "jp": "第一節", "romaji": "daiichi setsu", "lv": "Pirmais pants", "en": "First verse" },
+      { "jp": "第二節", "romaji": "daini setsu", "lv": "Otrais pants", "en": "Second verse" }
     ],
     "comments": []
   },
   {
     "id": 16,
     "imageFile": "SakuraBiyori.png",
-    "title": "SakuraBiyori",
+    "title": "Sakura Biyori and Time Machine with Hatsune Miku",
     "lines": [
-      { "jp": "さくらびより", "romaji": "sakura biyori", "lv": "pirmais pants", "en": "first verse" },
-      { "jp": "はるかぜ", "romaji": "harukaze", "lv": "otrais pants", "en": "second verse" }
+      { "jp": "第一節", "romaji": "daiichi setsu", "lv": "Pirmais pants", "en": "First verse" },
+      { "jp": "第二節", "romaji": "daini setsu", "lv": "Otrais pants", "en": "Second verse" }
     ],
     "comments": []
   },
   {
     "id": 17,
     "imageFile": "X.png",
-    "title": "X",
+    "title": "Episode X",
     "lines": [
-      { "jp": "えっくす", "romaji": "ekkusu", "lv": "pirmais pants", "en": "first verse" },
-      { "jp": "なぞ", "romaji": "nazo", "lv": "otrais pants", "en": "second verse" }
+      { "jp": "第一節", "romaji": "daiichi setsu", "lv": "Pirmais pants", "en": "First verse" },
+      { "jp": "第二節", "romaji": "daini setsu", "lv": "Otrais pants", "en": "Second verse" }
     ],
     "comments": []
   }
