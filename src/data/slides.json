@@ -94,25 +94,9 @@
     "imageFile": "MIRROR.png",
     "title": "MIRROR",
     "lines": [
-      { "jp": "Dance in the mirror. Me to me o awasete yo, insaidā. Iiwake, naraberunoni mo tsukaretadeshou?", "romaji": "latīņu", "lv": "latviešu", "en": "english" },
+      { "jp": "dance in the mirror 目と目を合わせてよ、インサイダー 言い訳、並べるのにも疲れたでしょう？", "romaji": "Dance in the mirror. Me to me o awasete yo, insaidā. Iiwake, naraberunoni mo tsukareta deshou?", "lv": "latviešu", "en": "english" },
 
-      { "jp": "Akari no nai heya de, hitorishibaida Sono, fureru te to te ga ten to sen ni natte Machiawase made, mōsukoshi datte Isoide shitaku shinakya, maniawanai wa", "romaji": "latīņu", "lv": "latviešu", "en": "english" },
-
-      { "jp": "みらー", "romaji": "latīņu", "lv": "latviešu", "en": "english" },
-
-      { "jp": "みらー", "romaji": "latīņu", "lv": "latviešu", "en": "english" },
-
-      { "jp": "みらー", "romaji": "latīņu", "lv": "latviešu", "en": "english" },
-
-      { "jp": "みらー", "romaji": "latīņu", "lv": "latviešu", "en": "english" },
-
-      { "jp": "みらー", "romaji": "latīņu", "lv": "latviešu", "en": "english" },
-
-      { "jp": "みらー", "romaji": "latīņu", "lv": "latviešu", "en": "english" },
-
-      { "jp": "みらー", "romaji": "latīņu", "lv": "latviešu", "en": "english" },
-
-      { "jp": "みらー", "romaji": "latīņu", "lv": "latviešu", "en": "english" }
+      { "jp": "明かりのない部屋で、一人芝居だ その、触れる手と手が点と線になって 待ち合わせまで、もう少しだって 急いで支度しなきゃ、間に合わないわ", "romaji": "Akari no nai heya de, hitorishibaida Sono, fureru te to te ga ten to sen ni natte Machiawase made, mōsukoshi datte Isoide shitaku shinakya, maniawanai wa", "lv": "latviešu", "en": "english" }
     ],
     "comments": []
   },
