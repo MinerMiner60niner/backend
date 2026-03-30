@@ -1,4 +1,5 @@
 import { Router, Request, Response } from "express";
+// @ts-ignore
 import jwt from "jsonwebtoken";
 
 const router = Router();
@@ -12,7 +13,7 @@ interface User {
   password: string;
 }
 
-// Vienkārša "datubāze" atmiņā
+// Vienkārša "datubāze" atmiņā (atceries, ka pēc restartēšanas dati pazudīs)
 let users: User[] = [];
 let nextId = 1;
 
@@ -46,16 +47,20 @@ router.post("/login", (req: Request, res: Response) => {
   }
 
   // Izveidojam JWT tokenu
-  const token = jwt.sign(
-    { id: user.id, name: user.name, email: user.email },
-    SECRET,
-    { expiresIn: "7d" }
-  );
+  try {
+    const token = jwt.sign(
+      { id: user.id, name: user.name, email: user.email },
+      SECRET,
+      { expiresIn: "7d" }
+    );
 
-  res.json({
-    success: true,
-    token,
-  });
+    res.json({
+      success: true,
+      token,
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Error generating token" });
+  }
 });
 
 export default router;
