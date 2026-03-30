@@ -26,12 +26,10 @@ router.post("/register", (req: Request, res: Response) => {
 router.post("/login", async (req: Request, res: Response) => {
   const { email, password } = req.body;
   
-  // Šeit mēs nodefinējam 'user' mainīgo!
+  // Šī rinda ir "dzīvības un nāves" jautājums - bez tās metīs kļūdu!
   const user = users.find((u) => u.email === email && u.password === password);
 
-  if (!user) {
-    return res.status(401).json({ error: "Invalid email or password" });
-  }
+  if (!user) return res.status(401).json({ error: "Invalid credentials" });
 
   try {
     const token = await new SignJWT({ id: user.id, name: user.name, email: user.email })
@@ -41,7 +39,7 @@ router.post("/login", async (req: Request, res: Response) => {
 
     res.json({ success: true, token });
   } catch (err) {
-    res.status(500).json({ error: "Error generating token" });
+    res.status(500).json({ error: "Token error" });
   }
 });
 
