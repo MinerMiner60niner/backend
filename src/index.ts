@@ -3,27 +3,30 @@ import cors from "cors";
 import path from "path";
 import { fileURLToPath } from "url";
 
+// NodeNext režīmā obligāti jāraksta .js paplašinājums, pat ja fails ir .ts
 import slidesRouter from "./routes/slides.js";
 import authRouter from "./routes/auth.js";
 import commentsRouter from "./routes/comments.js";
 
 const app = express();
+
 app.use(cors());
 app.use(express.json());
 
-// Fix __dirname for ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Serve images correctly on Render
+// Attēlu ceļš - šis tagad ir precīzāks
 app.use("/images", express.static(path.join(__dirname, "../images")));
 
-// API routes
-app.use("/api/auth", authRouter);          // register + login
-app.use("/api/slides", slidesRouter);      // slides list + slide by id
-app.use("/api/slides", commentsRouter);    // comments for slides
+app.use("/api/auth", authRouter);
+app.use("/api/slides", slidesRouter);
+app.use("/api/slides", commentsRouter);
 
-// Render provides PORT in environment
+app.get("/", (req, res) => {
+  res.send("ADOAPI Backend is running!");
+});
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
