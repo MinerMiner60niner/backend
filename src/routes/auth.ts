@@ -1,7 +1,6 @@
 import { Router, Request, Response } from "express";
 // @ts-ignore
-import pkg from 'jsonwebtoken';
-const { sign } = pkg;
+import jwt from 'jsonwebtoken';
 
 const router = Router();
 const SECRET = "supersecret123";
@@ -32,6 +31,8 @@ router.post("/register", (req: Request, res: Response) => {
 
 router.post("/login", (req: Request, res: Response) => {
   const { email, password } = req.body;
+  
+  // Šeit tiek definēts 'user' mainīgais!
   const user = users.find((u) => u.email === email && u.password === password);
 
   if (!user) {
@@ -39,8 +40,10 @@ router.post("/login", (req: Request, res: Response) => {
   }
 
   try {
-    // Izmantojam 'sign' pa tiešo no 'pkg'
-    const token = sign(
+    // Drošs veids, kā izsaukt sign funkciju ESM vidē
+    const signFn = (jwt as any).default?.sign || (jwt as any).sign;
+    
+    const token = signFn(
       { id: user.id, name: user.name, email: user.email },
       SECRET,
       { expiresIn: "7d" }
@@ -48,6 +51,7 @@ router.post("/login", (req: Request, res: Response) => {
 
     res.json({ success: true, token });
   } catch (err) {
+    console.error("JWT Error:", err);
     res.status(500).json({ error: "Error generating token" });
   }
 });
