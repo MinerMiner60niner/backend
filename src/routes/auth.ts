@@ -2,44 +2,24 @@ import { Router, Request, Response } from "express";
 import { SignJWT } from "jose";
 
 const router = Router();
-const SECRET = new TextEncoder().encode("supersecret123");
-
-interface User {
-  id: number;
-  name: string;
-  email: string;
-  password: string;
-}
-
-let users: User[] = [];
-let nextId = 1;
-
-router.post("/register", (req: Request, res: Response) => {
-  const { name, email, password } = req.body;
-  if (!name || !email || !password) return res.status(400).json({ error: "Missing fields" });
-  
-  const newUser: User = { id: nextId++, name, email, password };
-  users.push(newUser);
-  res.json({ success: true });
-});
+const SECRET = new TextEncoder().encode(process.env.JWT_SECRET || "super-secret-key");
 
 router.post("/login", async (req: Request, res: Response) => {
-  const { email, password } = req.body;
-  
-  // Šī rinda ir "dzīvības un nāves" jautājums - bez tās metīs kļūdu!
-  const user = users.find((u) => u.email === email && u.password === password);
-
-  if (!user) return res.status(401).json({ error: "Invalid credentials" });
-
   try {
+    const { email, password } = req.body;
+    
+    // Šeit parasti būtu DB pārbaude. Šobrīd izveidojam testa lietotāju:
+    const user = { id: 1, name: "Test User", email: email }; 
+
     const token = await new SignJWT({ id: user.id, name: user.name, email: user.email })
       .setProtectedHeader({ alg: "HS256" })
+      .setIssuedAt()
       .setExpirationTime("7d")
       .sign(SECRET);
 
-    res.json({ success: true, token });
-  } catch (err) {
-    res.status(500).json({ error: "Token error" });
+    res.json({ user, token });
+  } catch (error) {
+    res.status(500).json({ error: "Servera kļūda" });
   }
 });
 
