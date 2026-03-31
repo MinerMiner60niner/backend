@@ -18,17 +18,17 @@ function saveComments(data: any) {
   writeFileSync(COMMENTS_PATH, JSON.stringify(data, null, 2));
 }
 
-// GET /api/slides/:id/comments
-router.get("/:id/comments", (req, res) => {
-  const slideId = Number(req.params.id);
+// GET /api/comments/:slideId
+router.get("/:slideId", (req, res) => {
+  const slideId = Number(req.params.slideId);
   const comments = loadComments().filter((c: any) => c.slideId === slideId);
   res.json(comments);
 });
 
-// POST /api/slides/:id/comments
-router.post("/:id/comments", (req, res) => {
-  const slideId = Number(req.params.id);
-  const { text, user = "Anon" } = req.body;
+// POST /api/comments/:slideId
+router.post("/:slideId", (req, res) => {
+  const slideId = Number(req.params.slideId);
+  const { text, userId, user = "Anon" } = req.body;
 
   if (!text) {
     return res.status(400).json({ error: "Missing text" });
@@ -39,19 +39,21 @@ router.post("/:id/comments", (req, res) => {
   const newComment = {
     id: Date.now(),
     slideId,
+    userId,
     user,
-    text
+    text,
+    created_at: new Date().toISOString(),
   };
 
   comments.push(newComment);
   saveComments(comments);
 
-  res.json({ success: true, comment: newComment });
+  res.json(newComment);
 });
 
-// DELETE /api/slides/:id/comments/:commentId
-router.delete("/:id/comments/:commentId", (req, res) => {
-  const slideId = Number(req.params.id);
+// DELETE /api/comments/:slideId/:commentId
+router.delete("/:slideId/:commentId", (req, res) => {
+  const slideId = Number(req.params.slideId);
   const commentId = Number(req.params.commentId);
 
   let comments = loadComments();
