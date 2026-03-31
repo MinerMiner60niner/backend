@@ -28,10 +28,14 @@ router.get("/:slideId", (req, res) => {
 // POST /api/comments/:slideId
 router.post("/:slideId", (req, res) => {
   const slideId = Number(req.params.slideId);
-  const { text, userId, user = "Anon" } = req.body;
+  const { text, userId } = req.body;
 
   if (!text) {
     return res.status(400).json({ error: "Missing text" });
+  }
+
+  if (!userId) {
+    return res.status(401).json({ error: "Not logged in" });
   }
 
   const comments = loadComments();
@@ -40,7 +44,6 @@ router.post("/:slideId", (req, res) => {
     id: Date.now(),
     slideId,
     userId,
-    user,
     text,
     created_at: new Date().toISOString(),
   };
